@@ -1,0 +1,9 @@
+Package: beehive
+Title: Beehive
+Version: 0.0.0.9000
+Authors@R: person("Martin", "Gerdin Wärnberg", email = "martingerdin@gmail.com", role = c("aut", "cre"))
+Description: Research utility functions.
+Depends: R (>= 3.3.3)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
