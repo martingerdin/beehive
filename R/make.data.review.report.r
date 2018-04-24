@@ -3,6 +3,7 @@
 #' this function compiles a data review report
 #' @param path path to directory with records, no default
 #' @param report_name name of the report file, no default
+#' @param report_title title of the data review report, no default
 #' @param data_path path to data directory, no default
 #' @param data_copy_path path to data copy directory, no default
 #' @param codebook_path path to codebook, no default
@@ -14,6 +15,7 @@
 make.data.review.report <- function(
                                     path,
                                     report_name,
+                                    report_title,
                                     data_path,
                                     data_copy_path,
                                     codebook_path,
@@ -21,8 +23,6 @@ make.data.review.report <- function(
                                     test = FALSE
                                     )
 {
-## ** source initate code
-    source("./initiate.r")
 ## ** run initiate function
 ### loads required packages, sources all function from scripts and sets
 ### variables to be used by multiple functions throughout the session
@@ -38,6 +38,6 @@ make.data.review.report <- function(
 ### creates centre specific and collated datasets and saves those to disk
     dataset <- compile.collated.dataset()
 ## ** create report    
-    create.report(dataset, report_name, test)
+    create.report(report_title, dataset, report_name, test)
 ## * end    
 }
