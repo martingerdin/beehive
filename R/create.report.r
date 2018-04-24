@@ -1,6 +1,7 @@
 #' create report function
 #'
 #' this function creates the weekly data report
+#' @param report_title title of the data review report, no default
 #' @param dataset the dataset on which to base the report
 #' @param report_name the name of the report file, no default
 #' @param test logical, if TRUE the generated report is named test, no default
@@ -11,12 +12,12 @@
 ## * content
 ## ** declare
 create.report <- function(
+                          report_title,
                           dataset,
                           report_name,
                           test,
                           codebook_path = .session_variables$codebook_path,
-                          codebook_name = .session_variables$codebook_name,
-                          title = "TAFT data review report"
+                          codebook_name = .session_variables$codebook_name
                           )
 {
 ## ** use only live and non-test records
@@ -31,7 +32,7 @@ create.report <- function(
     codebook[] <- lapply(codebook, as.character)
     codebook[codebook == ""] <- NA
 ## ** create document header
-    header <- create.header(title)
+    header <- create.header(report_title)
 ## ** generate content
     plots <- list()
     overview_data <- list()
