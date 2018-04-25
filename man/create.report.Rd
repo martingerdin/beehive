@@ -4,7 +4,7 @@
 \alias{create.report}
 \title{create report function}
 \usage{
-create.report(report_title, dataset, report_name, test,
+create.report(report_title, dataset, report_name, test, exclusion_criteria,
   codebook_path = .session_variables$codebook_path,
   codebook_name = .session_variables$codebook_name)
 }
@@ -17,11 +17,11 @@ create.report(report_title, dataset, report_name, test,
 
 \item{test}{logical, if TRUE the generated report is named test, no default}
 
+\item{exclusion_criteria}{a list of functions defining what observations to exclude from the report, no default}
+
 \item{codebook_path}{the path to the data codebook that governs how to interpret the data, defaults to .session_variables$codebook_path}
 
 \item{codebook_name}{the name of the codebook, defaults to .session_variables$codebook_name}
-
-\item{title}{report title, defaults to "TAFT data review report"}
 }
 \description{
 this function creates the weekly data report

@@ -5,7 +5,8 @@
 \title{make data review report}
 \usage{
 make.data.review.report(path, report_name, report_title, data_path,
-  data_copy_path, codebook_path, codebook_name, test = FALSE)
+  data_copy_path, dataset_name_prefix, codebook_path, codebook_name,
+  exclusion_criteria, test = FALSE)
 }
 \arguments{
 \item{path}{path to directory with records, no default}
@@ -18,9 +19,13 @@ make.data.review.report(path, report_name, report_title, data_path,
 
 \item{data_copy_path}{path to data copy directory, no default}
 
+\item{dataset_name_prefix}{a character string to prefix the datasets with, no default}
+
 \item{codebook_path}{path to codebook, no default}
 
 \item{codebook_name}{name of codebook, no default}
+
+\item{exclusion_criteria}{a list of functions defining what observations to exclude from the report, no default}
 
 \item{test}{logical, if TRUE the generated report is named test, defaults to FALSE}
 }

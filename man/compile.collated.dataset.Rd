@@ -4,9 +4,12 @@
 \alias{compile.collated.dataset}
 \title{compile collated dataset function}
 \usage{
-compile.collated.dataset(dir_names = NULL, skip_dirs = NULL)
+compile.collated.dataset(dataset_name_prefix, dir_names = NULL,
+  skip_dirs = NULL)
 }
 \arguments{
+\item{dataset_name_prefix}{a character string to prefix the datasets with, no default}
+
 \item{dir_names}{a vector of directory names to import records from. default is NULL, in which case records from all directories present in path are imported}
 
 \item{skip_dirs}{a vector of directory names to skip importing from. default is NULL, in which case no directory is skipped}
