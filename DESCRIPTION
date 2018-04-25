@@ -1,10 +1,11 @@
 Package: beehive
 Title: Beehive
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: person("Martin", "Gerdin Wärnberg", email = "martingerdin@gmail.com", role = c("aut", "cre"))
 Description: Research utility functions.
 Depends:
 	R (>= 3.3.3),
+	readtext,
 	jsonlite,
    	knitr,	
 	lattice,
@@ -13,13 +14,6 @@ Depends:
         tabplot,
 	xtable		
 Imports:
-        jsonlite,
-   	knitr,	
-	lattice,
-        latticeExtra,
-	plyr,	
-        tabplot,
-	xtable		
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
