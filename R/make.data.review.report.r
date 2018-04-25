@@ -6,6 +6,7 @@
 #' @param report_title title of the data review report, no default
 #' @param data_path path to data directory, no default
 #' @param data_copy_path path to data copy directory, no default
+#' @param dataset_name_prefix a character string to prefix the datasets with, no default
 #' @param codebook_path path to codebook, no default
 #' @param codebook_name name of codebook, no default
 #' @param exclusion_criteria a list of functions defining what observations to exclude from the report, no default 
@@ -19,6 +20,7 @@ make.data.review.report <- function(
                                     report_title,
                                     data_path,
                                     data_copy_path,
+                                    dataset_name_prefix,
                                     codebook_path,
                                     codebook_name,
                                     exclusion_criteria,
@@ -38,7 +40,7 @@ make.data.review.report <- function(
     copy.data(path)
 ## ** compile dataset     
 ### creates centre specific and collated datasets and saves those to disk
-    dataset <- compile.collated.dataset()
+    dataset <- compile.collated.dataset(dataset_name_prefix)
 ## ** create report    
     create.report(report_title, dataset, report_name, test, exclusion_criteria)
 ## * end    
