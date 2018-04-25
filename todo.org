@@ -8,7 +8,5 @@
 ** FIXED json parser breaking on double quotes in double quotes
    CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16
 
-
-** FIXED add dynamic exclusion critera   
+** FIXED add dynamic exclusion critera
    CLOCK: [2018-04-25 Wed 10:47]--[2018-04-25 Wed 12:01] =>  1:14
-
