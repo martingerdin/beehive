@@ -5,14 +5,10 @@
 ** TODO Add missing data plot(s)
 
 * Issues
-** FIXED json parser breaking on double quotes in double quotes
+** FIXED json parser breaking on double quotes in double quotes	      :1.0.0:
    CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16
-
-** FIXED add dynamic exclusion critera
+** FIXED add dynamic exclusion critera				      :1.0.1:
    CLOCK: [2018-04-25 Wed 10:47]--[2018-04-25 Wed 12:01] =>  1:14
-
-   <<<<<<< HEAD
-
-** TOFIX directory naming
-   CLOCK: [2018-04-25 Wed 12:38]
+** FIXED directory naming					      :1.0.2:
+   CLOCK: [2018-04-25 Wed 12:38]--[2018-04-25 Wed 13:32] =>  0:54
 
