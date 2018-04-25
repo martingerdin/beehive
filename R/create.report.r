@@ -22,7 +22,7 @@ create.report <- function(
                           )
 {
 ## ** apply exclusion criteria
-    dataset <- apply.exclusion.criteria(dataset, exclusion criteria)
+    dataset <- apply.exclusion.criteria(dataset, exclusion_criteria)
 ## ** get codebook    
     codebook <- read.csv(paste0(codebook_path, codebook_name))
     codebook[] <- lapply(codebook, as.character)
