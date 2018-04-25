@@ -1,2 +1,8 @@
+#+TODO: TODO TOFIX FIXING | DONE FIXED
+
+* Tasks
 ** TODO Add summary plot(s)
 ** TODO Add missing data plot(s)
+
+* Issues
+** TOFIX json parser breaking on double quotes in double quotes
