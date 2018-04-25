@@ -14,4 +14,3 @@
    <<<<<<< HEAD
 
 ** TOFIX directory naming
->>>>>>> master
