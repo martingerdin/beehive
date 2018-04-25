@@ -9,8 +9,23 @@ import.record <- function(
                           file_path
                           )
 {
+## ** get record
+    text_record <- readtext(file_path)$text
 ## ** create record from JSON string
-    record <- as.data.frame(fromJSON(file_path), stringsAsFactors = FALSE)
+    json <- tryCatch(fromJSON(text_record),
+                     warning = function(w) {
+                         print(w)
+                         print(file_path)
+                         stop()
+                     },
+                     error = function(e) {
+                         print(file_path)
+                         print(e)
+                         preprocessed <- preprocess.record(text_record)
+                         json <- fromJSON(preprocessed)
+                         return(json)
+                     })
+    record <- as.data.frame(json, stringsAsFactors = FALSE)
     return(record)
 ## * end    
 }

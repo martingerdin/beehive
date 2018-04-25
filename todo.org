@@ -5,4 +5,6 @@
 ** TODO Add missing data plot(s)
 
 * Issues
-** TOFIX json parser breaking on double quotes in double quotes
+** DONE json parser breaking on double quotes in double quotes
+   CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16
+
