@@ -41,11 +41,11 @@ create.report <- function(
 ## ** end document and knit     
     end <- "\\end{document}"
     file_name <- paste0(report_name, "-", .session_variables$timestamp, ".rtex")
-    if (test) file_name <- "test.rtex"
+    if (test) file_name <- "test-report.rtex"
     write(paste0(header, content, end),
           file_name)
     knit2pdf(file_name)
-    if (test) system("open test.pdf")
+    if (test) system("open test-report.pdf")
 ## * end                   
 }
 

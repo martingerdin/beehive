@@ -40,7 +40,7 @@ make.data.review.report <- function(
     copy.data(path)
 ## ** compile dataset     
 ### creates centre specific and collated datasets and saves those to disk
-    dataset <- compile.collated.dataset(dataset_name_prefix)
+    dataset <- compile.collated.dataset(dataset_name_prefix, save = TRUE)
 ## ** create report    
     create.report(report_title, dataset, report_name, test, exclusion_criteria)
 ## * end    

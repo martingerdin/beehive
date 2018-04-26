@@ -2,11 +2,13 @@
 #'
 #' this function imports records from a specific directory
 #' @param dir_path path to directory to import records from, no default
+#' @param save logical, if TRUE the datasets are saved to disk, no default
 #' @export
 ## * content
 ## ** declare
 compile.centre.dataset <- function(
-                                   dir_path
+                                   dir_path,
+                                   save
                                    )
 {
 ## ** create vector with record files to import
@@ -22,10 +24,10 @@ compile.centre.dataset <- function(
         dataset <- dataset[, -grep(paste0(c("version", "X_id"),
                                           collapse = "|"),
                                    colnames(dataset))]
-        ds_path <- "./data/datasets/"
+        ds_path <- paste0(.session_variables$data_path, "datasets/")
         dir_name <- gsub("records", "dataset", basename(dir_path))
         new_dir_path <- paste0(ds_path, dir_name, "/")
-        save.dataset(dataset, new_dir_path)
+        if (save) save.dataset(dataset, new_dir_path)
     }
 ## ** return dataset    
     return(dataset)

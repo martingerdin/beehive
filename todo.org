@@ -1,10 +1,13 @@
 #+TODO: TODO TOFIX FIXING | DONE FIXED
 
 * Tasks
-** TODO Add summary plot(s)
-** TODO Add missing data plot(s)
+** TODO add summary plot(s)
+** TODO add missing data plot(s)
 
-** TODO Add test suite
+** TODO add test suite
+   CLOCK: [2018-04-26 Thu 07:44]
+   CLOCK: [2018-04-25 Wed 14:58]--[2018-04-25 Wed 16:41] =>  1:43
+** TODO make strata var dynamic instead of "centre"
 * Issues
 ** FIXED json parser breaking on double quotes in double quotes	      :1.0.0:
    CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16
