@@ -4,16 +4,16 @@
 ** TODO add summary plot(s)
 ** TODO add missing data plot(s)
 
-** TODO add test suite
-   CLOCK: [2018-04-26 Thu 07:44]
+** DONE add test suite						 :1.0.2.9000:
+   CLOCK: [2018-04-26 Thu 07:44]--[2018-04-26 Thu 10:53] =>  3:09
    CLOCK: [2018-04-25 Wed 14:58]--[2018-04-25 Wed 16:41] =>  1:43
 ** TODO make strata var dynamic instead of "centre"
 * Issues
-** FIXED json parser breaking on double quotes in double quotes	      :1.0.0:
+** FIXED json parser breaking on double quotes in double quotes	 :0.0.0.9000:
    CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16
-** FIXED add dynamic exclusion critera				      :1.0.1:
+** FIXED add dynamic exclusion critera				 :1.0.0.9000:
    CLOCK: [2018-04-25 Wed 10:47]--[2018-04-25 Wed 12:01] =>  1:14
-** FIXED directory naming					      :1.0.2:
+** FIXED directory naming					 :1.0.1.9000:
    CLOCK: [2018-04-25 Wed 12:38]--[2018-04-25 Wed 13:32] =>  0:54
 ** TOFIX centre wise analyses of quantitative variables
    CLOCK: [2018-04-25 Wed 14:49]--[2018-04-25 Wed 14:55] =>  0:06
