@@ -1,6 +1,6 @@
 #' copy data function
 #'
-#' this function copies data from origin and store here for easy and fast access
+#' this function copies data from origin (e.g. a server) and store here for easy and fast access
 #' @param path path to origin, no default
 #' @export
 ## * content

@@ -45,4 +45,4 @@ test.make.weekly.report <- function(
                             test = test)
 ## * end    
 }
-test.make.weekly.report()
+## test.make.weekly.report()

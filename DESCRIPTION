@@ -5,6 +5,7 @@ Authors@R: person("Martin", "Gerdin Wärnberg", email = "martingerdin@gmail.com"
 Description: Research utility functions.
 Depends:
 	R (>= 3.3.3),
+	RCurl,
 	readtext,
 	jsonlite,
    	knitr,	

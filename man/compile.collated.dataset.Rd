@@ -5,7 +5,7 @@
 \title{compile collated dataset function}
 \usage{
 compile.collated.dataset(dataset_name_prefix, dir_names = NULL,
-  skip_dirs = NULL)
+  skip_dirs = NULL, save = TRUE)
 }
 \arguments{
 \item{dataset_name_prefix}{a character string to prefix the datasets with, no default}
@@ -13,6 +13,8 @@ compile.collated.dataset(dataset_name_prefix, dir_names = NULL,
 \item{dir_names}{a vector of directory names to import records from. default is NULL, in which case records from all directories present in path are imported}
 
 \item{skip_dirs}{a vector of directory names to skip importing from. default is NULL, in which case no directory is skipped}
+
+\item{save}{logical, if TRUE the datasets are saved to disk, defaults to TRUE}
 }
 \description{
 this function puts compiles the collated dataset from records

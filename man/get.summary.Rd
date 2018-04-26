@@ -6,7 +6,7 @@
 \usage{
 get.summary(level = NULL, strata_data = NULL, t = TRUE, maxsum = NULL,
   force_na = TRUE, include_n = TRUE, include_p = FALSE, p_digits = 0,
-  name = level, data)
+  name = level, data, verbose = FALSE)
 }
 \arguments{
 \item{level}{the strata level to use when subsetting data based on strata_data, defaults to NULL}
@@ -28,6 +28,8 @@ get.summary(level = NULL, strata_data = NULL, t = TRUE, maxsum = NULL,
 \item{name}{(col)name of data, defaults to level}
 
 \item{data}{the data to be summarised, no default}
+
+\item{verbose}{logical, if TRUE more is printed to console, defaults to FALSE}
 }
 \description{
 this is a wrapper for the summary function, returns a data frame

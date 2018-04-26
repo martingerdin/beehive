@@ -20,14 +20,14 @@ compile.centre.dataset <- function(
         dataset <- NULL
     }
 ## ** save dataset to disk
-    if (!is.null(dataset)) {
+    if (save & !is.null(dataset)) {
         dataset <- dataset[, -grep(paste0(c("version", "X_id"),
                                           collapse = "|"),
                                    colnames(dataset))]
         ds_path <- paste0(.session_variables$data_path, "datasets/")
         dir_name <- gsub("records", "dataset", basename(dir_path))
         new_dir_path <- paste0(ds_path, dir_name, "/")
-        if (save) save.dataset(dataset, new_dir_path)
+        save.dataset(dataset, new_dir_path)
     }
 ## ** return dataset    
     return(dataset)

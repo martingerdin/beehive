@@ -28,8 +28,10 @@ compile.collated.dataset <- function(
 ## ** compile dataset
     dataset <- rbind.fill(lapply(dirs, compile.centre.dataset, save = save))
 ## ** save dataset to disk
-    dataset_path <- paste0(.session_variables$data_path, "/datasets/", dataset_name_prefix, "-dataset-collated/")
-    if (save) save.dataset(dataset, dataset_path)
+    if (save) {
+        dataset_path <- paste0(.session_variables$data_path, "/datasets/", dataset_name_prefix, "-dataset-collated/")
+        save.dataset(dataset, dataset_path)
+    }
 ## ** return dataset    
     return(dataset)
 ## * end    

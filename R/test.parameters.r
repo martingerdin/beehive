@@ -3,7 +3,7 @@
 #' not really a function, but includes individual parameters to set for testing
 test.parameters <- function()
 {
-    depends <- c("readtext", "jsonlite", "knitr", "lattice", "latticeExtra", "plyr", "tabplot", "xtable")
+    depends <- c("readtext", "jsonlite", "knitr", "lattice", "latticeExtra", "plyr", "tabplot", "xtable", "RCurl")
     for(p in depends) require(p, character.only = TRUE)
     fs <- list.files()
     fs <- fs[!(fs %in% c(grep("test-report|test.parameters", fs, value = TRUE), "test.make.data.review.report.r"))]
@@ -18,8 +18,24 @@ test.parameters <- function()
     codebook_name <- "test-codebook.csv"
     develop <- FALSE
     test <- TRUE
+    save <- FALSE
+    initiate(data_path, data_copy_path, codebook_path, codebook_name)
+    copy.data(path)
     dataset <- compile.collated.dataset(dataset_name_prefix, save = FALSE)
     codebook <- read.csv(paste0(codebook_path, codebook_name))
     codebook[] <- lapply(codebook, as.character)
     codebook[codebook == ""] <- NA
+## ** to test creating quantitative variable summaries
+    var_name <- "age"
+    strata <- "centre"
+    cb <- codebook[codebook$name == var_name, ]
+    variable_codebook <- cb
+    strata_list <- list(name = strata, data = dataset[[strata]])
+    vc <- variable_codebook
+    data <- dataset[, var_name]
+    data[data == vc$unknown] <- NA
+    data <- as.numeric(data)
+    level <- lsa[1]
+    strata_data <- strata$data
+    name <- level
 }

@@ -11,6 +11,7 @@
 #' @param p_digits integer, if include_p = TRUE this will be the number of digits in the percentage, defaults to 0
 #' @param name (col)name of data, defaults to level
 #' @param data the data to be summarised, no default
+#' @param verbose logical, if TRUE more is printed to console, defaults to FALSE
 #' @export
 ## * content
 ## ** declare
@@ -24,11 +25,13 @@ get.summary <- function(
                         include_p = FALSE,
                         p_digits = 0,
                         name = level,
-                        data
+                        data,
+                        verbose = FALSE
                         )
 {
 ## ** stratify if necessary
     if (!is.null(level)) data <- data[strata_data == level]
+    if (verbose) for (l in list(level, data, strata_data)) print(l)
 ## ** get summary as data frame
     m <- as.matrix(summary(data, maxsum = maxsum))
     colnames(m) <- name
@@ -36,6 +39,7 @@ get.summary <- function(
     if (include_n & !is.factor(data)) m <- rbind(m, matrix(length(data), dimnames = list("N.")))
     if (include_n & is.factor(data)) colnames(m) <- paste0(colnames(m), ", n=", length(data))
     if (t) m <- t(m)
+    if (verbose) print(m)
     df <- as.data.frame(m)
     df$i <- rownames(df)
     df <- df[order(df$i, decreasing = TRUE), ]
@@ -45,6 +49,7 @@ get.summary <- function(
         df <- rbind(df[-na_pos, ], na)
     }
     df$i <- NULL
+    if (verbose) print(df)
     sum_list <- list(m = df)
     if (include_p & is.factor(data)) {
         p <- m
@@ -52,6 +57,7 @@ get.summary <- function(
         colnames(p) <- paste0(colnames(p), " (%)")
         sum_list$p <- p
     }
+    if (verbose) print(sum_list)    
 ## ** return data frame
     return (sum_list)
 ## * end

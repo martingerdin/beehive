@@ -4,10 +4,12 @@
 \alias{compile.centre.dataset}
 \title{import records function}
 \usage{
-compile.centre.dataset(dir_path)
+compile.centre.dataset(dir_path, save)
 }
 \arguments{
 \item{dir_path}{path to directory to import records from, no default}
+
+\item{save}{logical, if TRUE the datasets are saved to disk, no default}
 }
 \description{
 this function imports records from a specific directory

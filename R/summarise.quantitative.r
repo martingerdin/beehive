@@ -30,8 +30,10 @@ summarise.quantitative <- function(
         summary_strata <- lapply(setNames(nm = ls),
                                  get.summary,
                                  data = data,
-                                 strata_data = strata$data)$m
+                                 strata_data = strata$data,
+                                 verbose = FALSE)
     } else summary_strata <- NULL
+    summary_strata <- lapply(summary_strata, function(x) x$m)
     table_list <- c(list(summary_all), summary_strata)
     rownames <- unlist(lapply(table_list, rownames))
     summary <- rbind.fill(table_list)
@@ -44,6 +46,7 @@ summarise.quantitative <- function(
     table <- paste0("\\begin{center} \n",
                     table, " \n",
                     "\\end{center} \n")
+    if (verbose) print(table)
 ## ** create graphics
     if (sum(!is.na(data)) > 0) {
         x <- "~ y"

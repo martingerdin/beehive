@@ -10,5 +10,5 @@ copy.data(path)
 \item{path}{path to origin, no default}
 }
 \description{
-this function copies data from origin and store here for easy and fast access
+this function copies data from origin (e.g. a server) and store here for easy and fast access
 }
