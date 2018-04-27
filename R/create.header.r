@@ -14,6 +14,7 @@ create.header <- function(title)
                      "\\usepackage{tabularx} \n",
                      "\\usepackage{hyperref} \n",
                      "\\usepackage{makecell} \n",
+                     "\\usepackage[a4paper, total={170mm, 257mm}]{geometry}",
                      "\\hypersetup{ \n",
                      "colorlinks, \n",
                      "citecolor=black, \n",

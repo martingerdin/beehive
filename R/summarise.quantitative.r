@@ -43,9 +43,9 @@ summarise.quantitative <- function(
                           floating = FALSE,
                           print.results = FALSE,
                           )
-    table <- paste0("\\begin{center} \n",
+    table <- paste0("\\begin{centering} \n",
                     table, " \n",
-                    "\\end{center} \n")
+                    "\\end{centering} \n")
     if (verbose) print(table)
 ## ** create graphics
     if (sum(!is.na(data)) > 0) {
@@ -62,9 +62,11 @@ summarise.quantitative <- function(
                                             xlab = vc$name,
                                             breaks = NULL,
                                             nint = length(levels(as.factor(data))))
-        graphics <- paste0("%% begin.rcode ", vc$name, ", echo=FALSE, results='asis', fig.width=4, fig.height=4 \n",
-                           "% print(plots$", vc$name, ") \n", 
-                           "%% end.rcode \n")
+        graphics <- paste0("\\begin{centering} \n",
+                           "%% begin.rcode ", vc$name, ", echo=FALSE, results='asis', fig.width=4, fig.height=4 \n",
+                           "% print(plots$", vc$name, ") \n",
+                           "%% end.rcode \n",
+                           "\\end{centering} \n")
     } else graphics <- ""
 ## ** create entry and return
     entry <- paste0(table, graphics)

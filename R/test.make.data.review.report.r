@@ -14,14 +14,14 @@
 #' @export
 ## * content
 ## ** declare
-test.make.weekly.report <- function(
-                                    path = "../test_data/server/",
+test.make.data.review.report <- function(
+                                    path = "./test_data/server/",
                                     report_name = "test-weekly-data-review-report",
                                     report_title = "Test data review report",
-                                    data_path = "../test_data/data/",
-                                    data_copy_path = "../test_data/data/copy/",
+                                    data_path = "./test_data/data/",
+                                    data_copy_path = "./test_data/data/copy/",
                                     dataset_name_prefix = "test",
-                                    codebook_path = "../test_data/codebook/",
+                                    codebook_path = "./test_data/codebook/",
                                     codebook_name = "test-codebook.csv",
                                     develop = FALSE,
                                     test = TRUE
@@ -45,4 +45,4 @@ test.make.weekly.report <- function(
                             test = test)
 ## * end    
 }
-## test.make.weekly.report()
+#test.make.data.review.report()
