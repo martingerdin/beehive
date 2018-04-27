@@ -8,7 +8,8 @@
    CLOCK: [2018-04-26 Thu 07:44]--[2018-04-26 Thu 10:53] =>  3:09
    CLOCK: [2018-04-25 Wed 14:58]--[2018-04-25 Wed 16:41] =>  1:43
 ** TODO make strata var dynamic instead of "centre"
-** TODO make margins larger
+** DONE make margins larger					 :1.0.3.9000:
+   CLOCK: [2018-04-26 Thu 16:00]--[2018-04-27 Fri 07:06] => 15:06
 * Issues
 ** FIXED json parser breaking on double quotes in double quotes	 :0.0.0.9000:
    CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16

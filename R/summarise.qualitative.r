@@ -72,11 +72,9 @@ summarise.qualitative <- function(
                           print.results = FALSE,
                           tabular.environment = "tabularx",
                           width = "\\textwidth")
-    table <- paste0("\\begin{center} \n",
-                    # "{\\footnotesize \n",
+    table <- paste0("\\begin{centering} \n",
                     table, " \n",
-                    # "} \n",
-                    "\\end{center} \n")
+                    "\\end{centering} \n")
 ## ** create graphics
     if (sum(!is.na(data)) > 0) {
         x <- "Freq. ~ data"
@@ -106,9 +104,11 @@ summarise.qualitative <- function(
                        type = "frequency",
                        scales = list(x = list(rot = 45, cex = cex)))
         frame$plots[[vc$name]] <- bc
-        graphics <- paste0("%% begin.rcode ", vc$name, ", echo=FALSE, results='asis', fig.width=4, fig.height=4 \n",
+        graphics <- paste0("\\begin{centering} \n",
+                           "%% begin.rcode ", vc$name, ", echo=FALSE, results='asis', fig.width=4, fig.height=4 \n",
                            "% print(plots$", vc$name, ") \n", 
-                           "%% end.rcode \n")
+                           "%% end.rcode \n",
+                           "\\end{centering} \n")
     } else graphics <- ""
 ## ** return entry    
     entry <- paste0(table, graphics)
