@@ -21,3 +21,6 @@
 ** FIXED centre wise analyses of quantitative variables		 :1.0.2.9000:
    CLOCK: [2018-04-26 Thu 11:13]--[2018-04-26 Thu 14:21] =>  3:08
    CLOCK: [2018-04-25 Wed 14:49]--[2018-04-25 Wed 14:55] =>  0:06
+
+** TOFIX rsync does not copy updated files
+
