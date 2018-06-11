@@ -12,7 +12,7 @@ C-x C-f todo.org
 git add --all ; git commit -m "fixed"
 git checkout develop
 git merge fix
-git tag x.y.z-9000
+git tag -a x.y.z.9000 -m "released development version x.y.z.9000"
 git push
 git push --tags
 # if everything works as expected merge with master 
@@ -21,6 +21,6 @@ git merge develop
 C-x C-f DESCRIPTION 
 # change version to x.y.z + 1, remove .9000
 git add DESCRIPTION; git commit -m "updated DESCRIPTION"
-git tag x.y.z
+git tag -a x.y.z -m "released version x.y.z + 1 based on development version x.y.z.9000"
 git push
 git push --tags
