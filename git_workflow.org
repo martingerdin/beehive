@@ -7,6 +7,8 @@ git add --all; git commit -m "updated description and added todo"
 git checkout fix
 git merge develop
 # fix code
+C-x C-f todo.org
+# mark todo or issue as added or fixed, tag with version id
 git add --all ; git commit -m "fixed"
 git checkout develop
 git merge fix
