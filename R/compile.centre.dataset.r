@@ -12,7 +12,7 @@ compile.centre.dataset <- function(
                                    )
 {
 ## ** create vector with record files to import
-    files <- list.files(dir_path, full.names = TRUE, recursive = FALSE, pattern = ".txt")
+    files <- list.files(dir_path, full.names = TRUE, recursive = FALSE, pattern = ".txt$")
 ## ** import records
     if (length(files) > 0) {
         dataset <- rbind.fill(lapply(files, import.record))
