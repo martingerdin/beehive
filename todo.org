@@ -27,4 +27,6 @@
 ** FIXED rsync does not copy updated files			 :1.0.4.9000:
 ** FIXED prevent temporary files from being included in data	 :1.0.5.9000:
    CLOCK: [2018-06-11 Mon 10:35]--[2018-06-11 Mon 11:00] =>  0:25
-   
+** TOFIX rsync fails because it cannot find exlude_list.txt
+   CLOCK: [2018-06-11 Mon 11:19]
+

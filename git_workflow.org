@@ -1,4 +1,5 @@
 git checkout develop
+git merge master
 C-x C-f DESCRIPTION 
 # change version to x.y.z.9000
 C-x C-f todo.org
