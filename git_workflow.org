@@ -1,5 +1,4 @@
 git checkout develop
-git tag x.y.z-9000
 C-x C-f DESCRIPTION 
 # change version to x.y.z.9000
 C-x C-f todo.org
@@ -10,6 +9,7 @@ git merge develop
 git add --all ; git commit -m "fixed"
 git checkout develop
 git merge fix
+git tag x.y.z-9000
 git push
 git push --tags
 # if everything works as expected merge with master 
