@@ -23,6 +23,6 @@
    CLOCK: [2018-04-26 Thu 11:13]--[2018-04-26 Thu 14:21] =>  3:08
    CLOCK: [2018-04-25 Wed 14:49]--[2018-04-25 Wed 14:55] =>  0:06
 ** FIXED rsync does not copy updated files			 :1.0.4.9000:
-** TOFIX prevent temporary files from being included in data
-   CLOCK: [2018-06-11 Mon 10:35]
-
+** FIXED prevent temporary files from being included in data	 :1.0.5.9000:
+   CLOCK: [2018-06-11 Mon 10:35]--[2018-06-11 Mon 11:00] =>  0:25
+   
