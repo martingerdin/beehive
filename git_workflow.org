@@ -3,6 +3,7 @@ C-x C-f DESCRIPTION
 # change version to x.y.z.9000
 C-x C-f todo.org
 # add or clock in on issue
+git add --all; git commit -m "updated description and added todo"
 git checkout fix
 git merge develop
 # fix code
