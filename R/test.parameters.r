@@ -20,7 +20,7 @@ test.parameters <- function()
     test <- TRUE
     save <- FALSE
     initiate(data_path, data_copy_path, codebook_path, codebook_name)
-    copy.data(path, test = TRUE)
+    copy.data(path)
     dataset <- compile.collated.dataset(dataset_name_prefix, save = FALSE)
     codebook <- read.csv(paste0(codebook_path, codebook_name))
     codebook[] <- lapply(codebook, as.character)
