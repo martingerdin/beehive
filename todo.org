@@ -29,7 +29,7 @@
    CLOCK: [2018-06-11 Mon 10:35]--[2018-06-11 Mon 11:00] =>  0:25
 ** FIXED rsync fails because it cannot find exlude_list.txt	 :1.0.7.9000:
    CLOCK: [2018-06-11 Mon 11:19]--[2018-06-11 Mon 11:47] =>  0:28
-
-** TOFIX rscync still not copying all files
-   CLOCK: [2018-06-25 Mon 07:46]
+** FIXED rscync still not copying all files			 :1.0.8.9000:
+   CLOCK: [2018-06-25 Mon 07:46]--[2018-06-25 Mon 07:56] =>  0:10
+   Replaced rsync with scp
 
