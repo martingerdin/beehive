@@ -53,7 +53,7 @@ get.summary <- function(
     sum_list <- list(m = df)
     if (include_p & is.factor(data)) {
         p <- df
-        p[, 1] <- paste0(m[, 1], " (", round(m/length(data) * 100, digits = p_digits), ")")
+        p[, 1] <- paste0(df[, 1], " (", round(df[, 1]/length(data) * 100, digits = p_digits), ")")
         colnames(p) <- paste0(colnames(p), " (%)")
         sum_list$p <- p
     }
