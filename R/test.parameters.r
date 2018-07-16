@@ -38,4 +38,21 @@ test.parameters <- function()
     level <- lsa[1]
     strata_data <- strata$data
     name <- level
+## ** to test creating qualitative variable summaries
+    var_name <- "moi"
+    strata <- "centre"
+    cb <- codebook[codebook$name == var_name, ]
+    variable_codebook <- cb
+    strata_list <- list(name = strata, data = dataset[[strata]])
+    vc <- variable_codebook
+    data <- dataset[, var_name]
+    data[data == vc$unknown] <- NA
+    values <- vc$valid_values
+    labels <- vc$value_labels
+    data <- rep(data, 10)
+    strata_list$data <- rep(strata_list$data, 10)
+    strata <- strata_list
+    maxsum <- 3
+    t <- FALSE
+    data <- as.factor(data)
 }
