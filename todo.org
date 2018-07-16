@@ -33,3 +33,7 @@
    CLOCK: [2018-06-25 Mon 07:46]--[2018-06-25 Mon 07:56] =>  0:10
    Replaced rsync with scp
 
+
+** TOFIX tabulation of qualitative variables does not work
+   CLOCK: [2018-07-16 Mon 12:12]
+
