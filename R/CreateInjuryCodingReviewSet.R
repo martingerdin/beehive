@@ -64,9 +64,9 @@ CreateInjuryCodingReviewSet <- function(dataset, sample.size = 100,
         logfile <- rbind(logfile, new.ids)
         saveRDS(logfile, "injury_coding_review_logged_ids.rds")
     }
-    ## Add review variable
-    if (nrow(set) > 0)
-        set$correct <- ""
+    ## Add review variables
+    if (nrow(set) > 0) 
+        set$correct <- set$correct_code <- ""
     ## Draw a random sample from the complete set
     if (!is.null(sample.size) & nrow(set) > sample.size)
         set <- set[sample(1:nrow(set), sample.size), ]

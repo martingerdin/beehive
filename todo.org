@@ -19,8 +19,8 @@
    CLOCK: [2018-08-07 Tue 08:10]--[2018-08-07 Tue 09:38] =>  1:28
    CLOCK: [2018-08-07 Tue 07:28]--[2018-08-07 Tue 07:52] =>  0:24
 ** TODO Add number.of.reviewers argument to the injury review moddule
-** TODO Add correct_code column to review set
-   CLOCK: [2018-08-07 Tue 18:46]
+** DONE Add correct_code column to review set			:1.0.11.9000:
+   CLOCK: [2018-08-07 Tue 18:46]--[2018-08-07 Tue 22:19] =>  3:33
 * Issues
 ** FIXED JSON parser breaking on double quotes in double quotes	 :0.0.0.9000:
    CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16
