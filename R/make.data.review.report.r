@@ -43,5 +43,7 @@ make.data.review.report <- function(
     dataset <- compile.collated.dataset(dataset_name_prefix, save = TRUE)
 ## ** create report    
     create.report(report_title, dataset, report_name, test, exclusion_criteria)
+## ** create injury coding review sets
+    CreateInjuryCodingReviewSet(dataset)
 ## * end    
 }
