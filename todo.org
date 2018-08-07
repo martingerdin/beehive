@@ -18,6 +18,7 @@
 ** DONE Add injury coding review module				:1.0.10.9000:
    CLOCK: [2018-08-07 Tue 08:10]--[2018-08-07 Tue 09:38] =>  1:28
    CLOCK: [2018-08-07 Tue 07:28]--[2018-08-07 Tue 07:52] =>  0:24
+** TODO Add number.of.reviewers argument to the injury review moddule
 * Issues
 ** FIXED JSON parser breaking on double quotes in double quotes	 :0.0.0.9000:
    CLOCK: [2018-04-25 Wed 09:05]--[2018-04-25 Wed 10:21] =>  1:16
