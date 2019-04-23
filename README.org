@@ -1,3 +1,0 @@
-* beehive
-R utility functions for my research. The package currently has only one purpose
-and that is to produce data review reports.
